@@ -12,8 +12,6 @@ body {
 
 .calculator-grid {
   display: grid;
-  justify-content: left;
-  align-content: left;
   min-height: 100vh;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(7, 100px);
@@ -64,4 +62,13 @@ body {
 .output .current-operand {
   color: white;
   font-size: 2.5rem;
+}
+
+
+/* responsive */
+
+@media (max-width: 670px){
+  .container {
+    flex-wrap: wrap;
+  }
 }
