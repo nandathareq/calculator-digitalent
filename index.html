@@ -13,8 +13,8 @@
             <button onclick="myFunction()" id="show-btn">X</button>
             <script>
                 function myFunction() {
-                  var x = document.getElementById("keypad");
-                  var y = document.getElementById("show-btn");
+                  const x = document.getElementById("keypad");
+                  const y = document.getElementById("show-btn");
                   if (x.style.display === "none") {
                     x.style.display = "grid";
                     y.style.bottom = "65%"
@@ -60,8 +60,8 @@
             <div id="graph" class="graph-grid">
                 <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
                 <script>
-                    var elt = document.getElementById('graph');
-                    var graph = Desmos.GraphingCalculator(elt);
+                    const elt = document.getElementById('graph');
+                    const graph = Desmos.GraphingCalculator(elt);
                     graph.setExpression({ id: 'graph1', latex: 'y=x^{1/2}'});
                     graph.updateSettings({expressions:false, keypad:false, settingsMenu:false, zoomButtons: false});
                 </script>
