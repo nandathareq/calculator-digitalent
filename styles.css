@@ -124,7 +124,7 @@
         z-index: 15;
         position: absolute;
         right: 25px;
-        bottom: 25px;
+        bottom: 45px;
     }
 
     .calculator-grid {
@@ -139,6 +139,7 @@
         z-index: 10;
         min-height: 55vh;
         bottom: 0px;
+        margin-bottom: 30px;
     }
 
     .calculator-grid > button {
