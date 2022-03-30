@@ -113,10 +113,6 @@
 
   @media (max-width: 670px){
       
-     .container {
-        margin-bottom: 100px;
-    }
-
     .container > button {
         background-color: rgba(0, 0, 0, .75);
         border: none;
