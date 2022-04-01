@@ -11,19 +11,6 @@
     <body>
         <div class="container">
             <button onclick="myFunction()" id="show-btn">X</button>
-            <script>
-                function myFunction() {
-                  const x = document.getElementById("keypad");
-                  const y = document.getElementById("show-btn");
-                  if (x.style.display === "none") {
-                    x.style.display = "grid";
-                    y.style.bottom = "65%"
-                  } else {
-                    x.style.display = "none";
-                    y.style.bottom = "25px"
-                  }
-                }
-            </script>
             <div class="calculator-grid" id="keypad">
                 <div class="output">
                     <div data-previous-operand class="previous-operand"></div>
@@ -34,12 +21,12 @@
                 <button data-operation>Tan</button>
                 <button data-all-clear>AC</button>
                 <button data-operation>Ln</button>
-                <button data-operation>Log</button>
-                <button data-var>x</button>
+                <button data-operation>Log10</button>
+                <button data-initial-function>f(x)</button>
                 <button data-delete>DEL</button>
                 <button data-operation>ⁿ√a</button>
                 <button data-operation>aⁿ</button>
-                <button data-var>y</button>
+                <button data-number>X</button>
                 <button data-operation>÷</button>
                 <button data-number>7</button>
                 <button data-number>8</button>
@@ -59,12 +46,6 @@
             </div>
             <div id="graph" class="graph-grid">
                 <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
-                <script>
-                    const elt = document.getElementById('graph');
-                    const graph = Desmos.GraphingCalculator(elt);
-                    graph.setExpression({ id: 'graph1', latex: 'y=x^{1/2}'});
-                    graph.updateSettings({expressions:false, keypad:false, settingsMenu:false, zoomButtons: false});
-                </script>
             </div>
         </div>
     </body>
